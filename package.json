@@ -1,7 +1,6 @@
 {
   "name": "design-system-sandbox",
-  "version": "1.0.0",
-  "description": "Design System Sandvox",
+  "version": "0.1.1",
   "author": "dfosco",
   "license": "MIT",
   "repository": "dfosco/design-system-sandbox",
@@ -20,6 +19,12 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.1",
+    "prism-react-renderer": "^1.0.2",
+    "prop-types": "^15.7.2",
+    "react-live": "^2.2.2"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
