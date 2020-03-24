@@ -7,7 +7,7 @@ export default function CoreEditor({ code, theme, scope }) {
     <LiveProvider
       theme={theme}
       scope={scope}
-      transformCode={code => `<>${code}</>`}
+      transformCode={code => `<React.Fragment>${code}</React.Fragment>`}
       code={code}
     >
       <section className="order-2 order-1-l w-100 w-50-l h-50 h-100-l">
