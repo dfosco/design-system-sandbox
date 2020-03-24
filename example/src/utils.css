@@ -1,0 +1,24 @@
+.bottom-50 {
+  bottom: 50%;
+}
+
+.min-h-50 {
+  min-height: 50%;
+}
+
+@media screen and (min-width: 30em) {
+  .bottom-50-ns {
+    bottom: 50%;
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .bottom-50-m {
+    bottom: 50%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .bottom-50-l {
+    bottom: 50%;
+  }
+}
