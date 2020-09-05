@@ -22,16 +22,23 @@ const antDesign = {
 export default class App extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route path={materialUI.route}>
-            <Editor code={materialUI.code} scope={materialUI.scope} />
-          </Route>
-          <Route path={antDesign.route}>
-            <Editor code={antDesign.code} scope={antDesign.scope} />
-          </Route>
-        </Switch>
-      </Router>
+      <React.Fragment>
+        <aside id="tw">
+          <nav className="bg-red-400">
+            wawa
+          </nav>
+        </aside>
+        <Router>
+          <Switch>
+            <Route path={materialUI.route}>
+              <Editor code={materialUI.code} scope={materialUI.scope} />
+            </Route>
+            <Route path={antDesign.route}>
+              <Editor code={antDesign.code} scope={antDesign.scope} />
+            </Route>
+          </Switch>
+        </Router>
+      </React.Fragment>
     );
   }
 }
