@@ -18,27 +18,11 @@ Currently supports React components and JSX markup. Add code you would add insid
 
 There are two ways to use the sandbox:
 
-#### Use the Demo sandbox application with your design system
-
-1) Run `yarn add design-system-sandbox/demo`
-
-2) Open `sandbox.config.js` and add your design system package name, as well as components you want to import into the editor.
-
-3) Still on `sandbox.config.js`, add the default code that should be the placeholder on the editor.
-
-4) The demo app runs create-react-app, open `package.json` to change the deployment settings. Refer to `create-react-app` documentation for more.
-
-#### Import the Editor component into your own application
+#### Import the Editor component into your application to use with your design system
 
 1) Run `yarn add design-system-sandbox`
 
-2) Import the `Editor` component into your application:
-
-```js
-  import { Editor } from "design-system-sandbox"
-```
-
-3) Export your design system components into a `scope` object to make them available for the editor, i.e.:
+2) Export your design system components into a `scope` object to make them available for the editor, i.e.:
 
 ```js
   import Button from "my-design-system/core/Button";
@@ -54,35 +38,37 @@ There are two ways to use the sandbox:
 export { scope };
 ```
 
+2) Import the `Editor` component into your application:
+
+```js
+  import { Editor } from "design-system-sandbox"
+```
+
 4) Pass your scope object into the `scope` prop, and pass the editor placeholder code into the `code` prop
 
 ```js
   <Editor code={`<Button>Click me</Button>`} scope={scope} />
 ```
 
-[THIS ]
+You can also define an HTML tag for your editor object with a `tag` prop. Default is `div`
 
-## Install
-
-```bash
-npm install --save design-system-sandbox
+```js
+  <Editor tag='main' code={`<Button>Click me</Button>`} scope={scope} />
 ```
 
-## Usage
+#### Use the Demo sandbox application with your design system
 
-```jsx
-import React, { Component } from 'react'
+Coming Soon 💁‍♀️
 
-import MyComponent from 'design-system-sandbox'
+<!-- 
+1) Run `yarn add design-system-sandbox/demo`
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
-```
+2) Open `sandbox.config.js` and add your design system package name, as well as components you want to import into the editor.
+
+3) Still on `sandbox.config.js`, add the default code that should be the placeholder on the editor.
+
+4) The demo app runs create-react-app, open `package.json` to change the deployment settings. Refer to `create-react-app` documentation for more.
+ -->
 
 ## License
 
