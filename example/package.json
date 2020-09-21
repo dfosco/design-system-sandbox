@@ -1,13 +1,13 @@
 {
   "name": "design-system-sandbox-example",
-  "homepage": "https://dfosco.github.io/design-system-sandbox",
+  "homepage": "https://design-system-sandbox.netlify.app",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.7",
     "antd": "^4.0.4",
-    "design-system-sandbox": "link:..",
+    "design-system-sandbox": "^0.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
