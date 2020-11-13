@@ -18,7 +18,7 @@
   "scripts": {
     "start": "npx tailwindcss build -o src/tailwind.css -c tailwind.config.js & react-scripts start",
     "style": "npx tailwindcss build -o src/tailwind.css -c tailwind.config.js",
-    "build": "npx tailwindcss build -o src/tailwind.css -c tailwind.config.js & react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
